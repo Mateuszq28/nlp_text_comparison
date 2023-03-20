@@ -1,0 +1,5 @@
+TEST: test_6_eng_ginger_on_whisper_base_greedy_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.17       0.17       0.72       0.28       0.09       90.93      90.93      90.93      whisper_bese.en_greedy-ginger.txt
+0.17       0.17       0.72       0.28       0.1        89.71      91.59      87.9       whisper_result_base.en_English.txt

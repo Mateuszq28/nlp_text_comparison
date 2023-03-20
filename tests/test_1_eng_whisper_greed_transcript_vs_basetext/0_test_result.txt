@@ -1,0 +1,12 @@
+TEST: test_1_eng_whisper_greed_transcript_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.16       0.16       0.74       0.26       0.11       92.51      92.92      92.11      whisper_result_large_English.txt
+0.16       0.16       0.74       0.26       0.09       91.71      91.81      91.61      whisper_result_medium_English.txt
+0.16       0.16       0.74       0.26       0.1        91.9       91.59      92.2       whisper_result_small_English.txt
+0.17       0.16       0.73       0.27       0.11       92.0       91.59      92.41      whisper_result_small.en_English.txt
+0.17       0.17       0.72       0.28       0.09       91.25      91.15      91.35      whisper_result_base.en_English.txt
+0.17       0.17       0.72       0.28       0.1        89.98      89.38      90.58      whisper_result_base_English.txt
+0.2        0.19       0.71       0.29       0.14       92.15      92.26      92.05      whisper_result_medium.en_English.txt
+0.19       0.18       0.7        0.3        0.11       90.81      90.71      90.91      whisper_result_tiny.en_English.txt
+0.21       0.2        0.67       0.33       0.12       90.02      89.82      90.22      whisper_result_tiny_English.txt

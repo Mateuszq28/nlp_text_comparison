@@ -1,0 +1,11 @@
+TEST: test_2_eng_whisper_beam_transcript_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.16       0.16       0.74       0.26       0.1        92.38      92.48      92.27      whisper_result_medium_English.txt
+0.16       0.16       0.74       0.26       0.1        91.92      91.81      92.02      whisper_result_small.en_English.txt
+0.16       0.16       0.73       0.27       0.1        92.07      92.48      91.67      whisper_result_medium.en_English.txt
+0.17       0.17       0.72       0.28       0.1        91.47      91.37      91.57      whisper_result_base.en_English.txt
+0.18       0.17       0.72       0.28       0.1        92.17      91.15      93.21      whisper_result_small_English.txt
+0.18       0.17       0.71       0.29       0.1        89.98      89.38      90.58      whisper_result_base_English.txt
+0.19       0.19       0.7        0.3        0.11       91.59      89.16      94.16      whisper_result_tiny.en_English.txt
+0.19       0.19       0.69       0.31       0.13       90.37      90.27      90.47      whisper_result_tiny_English.txt

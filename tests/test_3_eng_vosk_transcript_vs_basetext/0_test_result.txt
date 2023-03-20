@@ -1,0 +1,6 @@
+TEST: test_3_eng_vosk_transcript_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.37       0.37       0.43       0.57       0.15       0.44       0.22       100.0      10min vosk-model-en-us-0.22.json
+0.38       0.38       0.42       0.58       0.15       0.44       0.22       100.0      10min vosk-model-en-us-0.22-lgraph.json
+0.4        0.39       0.39       0.61       0.17       0.44       0.22       100.0      10min vosk-model-small-en-us-0.15.json

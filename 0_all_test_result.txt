@@ -1,0 +1,116 @@
+TEST: test_1_eng_whisper_greed_transcript_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.16       0.16       0.74       0.26       0.11       92.51      92.92      92.11      whisper_result_large_English.txt
+0.16       0.16       0.74       0.26       0.09       91.71      91.81      91.61      whisper_result_medium_English.txt
+0.16       0.16       0.74       0.26       0.1        91.9       91.59      92.2       whisper_result_small_English.txt
+0.17       0.16       0.73       0.27       0.11       92.0       91.59      92.41      whisper_result_small.en_English.txt
+0.17       0.17       0.72       0.28       0.09       91.25      91.15      91.35      whisper_result_base.en_English.txt
+0.17       0.17       0.72       0.28       0.1        89.98      89.38      90.58      whisper_result_base_English.txt
+0.2        0.19       0.71       0.29       0.14       92.15      92.26      92.05      whisper_result_medium.en_English.txt
+0.19       0.18       0.7        0.3        0.11       90.81      90.71      90.91      whisper_result_tiny.en_English.txt
+0.21       0.2        0.67       0.33       0.12       90.02      89.82      90.22      whisper_result_tiny_English.txt
+
+
+TEST: test_2_eng_whisper_beam_transcript_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.16       0.16       0.74       0.26       0.1        92.38      92.48      92.27      whisper_result_medium_English.txt
+0.16       0.16       0.74       0.26       0.1        91.92      91.81      92.02      whisper_result_small.en_English.txt
+0.16       0.16       0.73       0.27       0.1        92.07      92.48      91.67      whisper_result_medium.en_English.txt
+0.17       0.17       0.72       0.28       0.1        91.47      91.37      91.57      whisper_result_base.en_English.txt
+0.18       0.17       0.72       0.28       0.1        92.17      91.15      93.21      whisper_result_small_English.txt
+0.18       0.17       0.71       0.29       0.1        89.98      89.38      90.58      whisper_result_base_English.txt
+0.19       0.19       0.7        0.3        0.11       91.59      89.16      94.16      whisper_result_tiny.en_English.txt
+0.19       0.19       0.69       0.31       0.13       90.37      90.27      90.47      whisper_result_tiny_English.txt
+
+
+TEST: test_3_eng_vosk_transcript_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.37       0.37       0.43       0.57       0.15       0.44       0.22       100.0      10min vosk-model-en-us-0.22.json
+0.38       0.38       0.42       0.58       0.15       0.44       0.22       100.0      10min vosk-model-en-us-0.22-lgraph.json
+0.4        0.39       0.39       0.61       0.17       0.44       0.22       100.0      10min vosk-model-small-en-us-0.15.json
+
+
+TEST: test_4_eng_ginger_on_vosk_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.01       0.01       0.98       0.02       0.02       97.51      99.56      95.54      finetext-ginger.txt
+0.22       0.21       0.66       0.34       0.13       91.21      90.71      91.72      vosktext-ginger.txt
+0.22       0.22       0.65       0.35       0.12       90.62      88.72      92.61      tekst_odniesienia-z_najlepszego_medelu_vosk-cut10min.txt
+
+
+TEST: test_5_eng_ginger_on_basetext_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.01       0.01       0.98       0.02       0.01       99.12      99.34      98.9       finetext-ginger.txt
+0.22       0.21       0.66       0.34       0.11       0.44       0.22       100.0      vosktext-ginger.txt
+0.22       0.22       0.65       0.35       0.11       0.44       0.22       100.0      tekst_odniesienia-z_najlepszego_medelu_vosk-cut10min.txt
+
+
+TEST: test_6_eng_ginger_on_whisper_base_greedy_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.17       0.17       0.72       0.28       0.09       90.93      90.93      90.93      whisper_bese.en_greedy-ginger.txt
+0.17       0.17       0.72       0.28       0.1        89.71      91.59      87.9       whisper_result_base.en_English.txt
+
+
+TEST: test_7_eng_vosk_text2punc_raw_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.22       0.22       0.65       0.35       0.12       90.62      88.72      92.61      text2punc 1h20min vosk-model-en-us-0.22.txt
+0.25       0.24       0.62       0.38       0.13       90.52      88.72      92.4       text2punc raw 1h20min vosk-model-en-us-0.22.txt
+
+
+TEST: test_8_eng_vosk_text2punc_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.22       0.22       0.65       0.35       0.12       90.62      88.72      92.61      text2punc 1h20min vosk-model-en-us-0.22.txt
+0.28       0.26       0.6        0.4        0.14       90.64      88.94      92.41      text2punc raw 1h20min vosk-model-en-us-0.22.txt
+
+
+TEST: ALL TESTS TOGETHER
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.01       0.01       0.98       0.02       0.02       97.51      99.56      95.54      finetext-ginger.txt
+0.01       0.01       0.98       0.02       0.01       99.12      99.34      98.9       finetext-ginger.txt
+0.16       0.16       0.74       0.26       0.11       92.51      92.92      92.11      whisper_result_large_English.txt
+0.16       0.16       0.74       0.26       0.09       91.71      91.81      91.61      whisper_result_medium_English.txt
+0.16       0.16       0.74       0.26       0.1        91.9       91.59      92.2       whisper_result_small_English.txt
+0.16       0.16       0.74       0.26       0.1        92.38      92.48      92.27      whisper_result_medium_English.txt
+0.16       0.16       0.74       0.26       0.1        91.92      91.81      92.02      whisper_result_small.en_English.txt
+0.17       0.16       0.73       0.27       0.11       92.0       91.59      92.41      whisper_result_small.en_English.txt
+0.16       0.16       0.73       0.27       0.1        92.07      92.48      91.67      whisper_result_medium.en_English.txt
+0.17       0.17       0.72       0.28       0.09       91.25      91.15      91.35      whisper_result_base.en_English.txt
+0.17       0.17       0.72       0.28       0.1        89.98      89.38      90.58      whisper_result_base_English.txt
+0.17       0.17       0.72       0.28       0.1        91.47      91.37      91.57      whisper_result_base.en_English.txt
+0.18       0.17       0.72       0.28       0.1        92.17      91.15      93.21      whisper_result_small_English.txt
+0.17       0.17       0.72       0.28       0.09       90.93      90.93      90.93      whisper_bese.en_greedy-ginger.txt
+0.17       0.17       0.72       0.28       0.1        89.71      91.59      87.9       whisper_result_base.en_English.txt
+0.2        0.19       0.71       0.29       0.14       92.15      92.26      92.05      whisper_result_medium.en_English.txt
+0.18       0.17       0.71       0.29       0.1        89.98      89.38      90.58      whisper_result_base_English.txt
+0.19       0.18       0.7        0.3        0.11       90.81      90.71      90.91      whisper_result_tiny.en_English.txt
+0.19       0.19       0.7        0.3        0.11       91.59      89.16      94.16      whisper_result_tiny.en_English.txt
+0.19       0.19       0.69       0.31       0.13       90.37      90.27      90.47      whisper_result_tiny_English.txt
+0.21       0.2        0.67       0.33       0.12       90.02      89.82      90.22      whisper_result_tiny_English.txt
+0.22       0.21       0.66       0.34       0.13       91.21      90.71      91.72      vosktext-ginger.txt
+0.22       0.21       0.66       0.34       0.11       0.44       0.22       100.0      vosktext-ginger.txt
+0.22       0.22       0.65       0.35       0.12       90.62      88.72      92.61      tekst_odniesienia-z_najlepszego_medelu_vosk-cut10min.txt
+0.22       0.22       0.65       0.35       0.11       0.44       0.22       100.0      tekst_odniesienia-z_najlepszego_medelu_vosk-cut10min.txt
+0.22       0.22       0.65       0.35       0.12       90.62      88.72      92.61      text2punc 1h20min vosk-model-en-us-0.22.txt
+0.22       0.22       0.65       0.35       0.12       90.62      88.72      92.61      text2punc 1h20min vosk-model-en-us-0.22.txt
+0.25       0.24       0.62       0.38       0.13       90.52      88.72      92.4       text2punc raw 1h20min vosk-model-en-us-0.22.txt
+0.28       0.26       0.6        0.4        0.14       90.64      88.94      92.41      text2punc raw 1h20min vosk-model-en-us-0.22.txt
+0.37       0.37       0.43       0.57       0.15       0.44       0.22       100.0      10min vosk-model-en-us-0.22.json
+0.38       0.38       0.42       0.58       0.15       0.44       0.22       100.0      10min vosk-model-en-us-0.22-lgraph.json
+0.4        0.39       0.39       0.61       0.17       0.44       0.22       100.0      10min vosk-model-small-en-us-0.15.json
+
+

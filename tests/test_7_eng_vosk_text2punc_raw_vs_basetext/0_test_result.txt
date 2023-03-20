@@ -1,0 +1,5 @@
+TEST: test_7_eng_vosk_text2punc_raw_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.22       0.22       0.65       0.35       0.12       90.62      88.72      92.61      text2punc 1h20min vosk-model-en-us-0.22.txt
+0.25       0.24       0.62       0.38       0.13       90.52      88.72      92.4       text2punc raw 1h20min vosk-model-en-us-0.22.txt

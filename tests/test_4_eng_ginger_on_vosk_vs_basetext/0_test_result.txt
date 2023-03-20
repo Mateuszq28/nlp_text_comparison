@@ -1,0 +1,6 @@
+TEST: test_4_eng_ginger_on_vosk_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.01       0.01       0.98       0.02       0.02       97.51      99.56      95.54      finetext-ginger.txt
+0.22       0.21       0.66       0.34       0.13       91.21      90.71      91.72      vosktext-ginger.txt
+0.22       0.22       0.65       0.35       0.12       90.62      88.72      92.61      tekst_odniesienia-z_najlepszego_medelu_vosk-cut10min.txt
