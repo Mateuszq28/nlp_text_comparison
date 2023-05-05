@@ -44,7 +44,8 @@ def preprocess_from_testname(testname):
         "test_5_eng_ginger_on_basetext_vs_basetext": preprocess_catalog.preprocess5,
         "test_6_eng_ginger_on_whisper_base_greedy_vs_basetext": preprocess_catalog.preprocess6,
         "test_7_eng_vosk_text2punc_raw_vs_basetext": preprocess_catalog.preprocess7,
-        "test_8_eng_vosk_text2punc_vs_basetext": preprocess_catalog.preprocess8
+        "test_8_eng_vosk_text2punc_vs_basetext": preprocess_catalog.preprocess8,
+        "test_9_grammar_check_vs_basetext": preprocess_catalog.preprocess9
     }
     return d[testname]
     

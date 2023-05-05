@@ -70,6 +70,13 @@ wer        mer        wip        wil        cer        f1_score   kompletnoœæ pr
 0.28       0.26       0.6        0.4        0.14       90.64      88.94      92.41      text2punc raw 1h20min vosk-model-en-us-0.22.txt
 
 
+TEST: test_9_grammar_check_vs_basetext
+wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.06       0.06       0.91       0.09       0.03       95.38      96.02      94.76      corrected_by_gingerit.txt
+0.06       0.06       0.89       0.11       0.03       95.05      95.58      94.53      tekst_odniesienia-bledy-10min.txt
+
+
 TEST: ALL TESTS TOGETHER
 wer        mer        wip        wil        cer        f1_score   kompletnoœæ precyzja   filename  
 0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
@@ -80,8 +87,11 @@ wer        mer        wip        wil        cer        f1_score   kompletnoœæ pr
 0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
 0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
 0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
+0.0        0.0        1.0        0.0        0.0        100.0      100.0      100.0      tekst_odniesienia-10min.txt
 0.01       0.01       0.98       0.02       0.02       97.51      99.56      95.54      finetext-ginger.txt
 0.01       0.01       0.98       0.02       0.01       99.12      99.34      98.9       finetext-ginger.txt
+0.06       0.06       0.91       0.09       0.03       95.38      96.02      94.76      corrected_by_gingerit.txt
+0.06       0.06       0.89       0.11       0.03       95.05      95.58      94.53      tekst_odniesienia-bledy-10min.txt
 0.16       0.16       0.74       0.26       0.11       92.51      92.92      92.11      whisper_result_large_English.txt
 0.16       0.16       0.74       0.26       0.09       91.71      91.81      91.61      whisper_result_medium_English.txt
 0.16       0.16       0.74       0.26       0.1        91.9       91.59      92.2       whisper_result_small_English.txt
